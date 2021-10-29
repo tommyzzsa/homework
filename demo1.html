@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二次作业leve1</title>
+    
+</head>
+<style>
+    .box{
+        display: flex;
+        align-items: center;
+        width:100vw;
+        height: 75vh;
+        border: 1px solid;
+        justify-content: space-between;
+        
+    }
+    
+    .item:nth-child(1){
+        height: 120px;
+        width: 150px;
+        padding: 20px;
+        border: 2px solid;
+        border-color: red ;
+        
+    }
+    .item:nth-child(2){
+        height: 100px;
+        width: 150px;
+        padding: 20px;
+        border: 2px solid;
+        border-color: red;
+
+    }
+    .item:nth-child(3){
+        height: 40px;
+        width: 150px;
+        padding: 20px;
+        border: 2px solid;
+        border-color: red;
+
+    }
+    .item:nth-child(4){
+        height: 200px;
+        width: 150px;
+        padding: 20px;
+        border: 2px solid;
+        border-color: blue;
+        
+
+    }
+@media screen and (max-width: 640px) 
+{
+    .box{
+        flex-wrap: wrap;
+    }
+    .item:nth-child(4){
+        order: 1;
+    }
+    .item:nth-child(2){
+        order: 3;
+    }
+    .item:nth-child(3){
+        order: 4;
+    }
+    .item:nth-child(1){
+        order: 2;
+    }
+    .item{
+    color: brown;
+    
+    }
+}
+
+</style>
+<body>
+<div class="box">
+
+    <div class="item">好难</div>
+    <div class="item">呜呜呜</div>
+    <div class="item">我裂开来</div>
+    <div class="item">人快要没了</div>
+</div> 
+</body>
+</html>
